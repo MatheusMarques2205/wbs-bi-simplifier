@@ -3,6 +3,47 @@
 ## About
 Tool to simplify WBS data from MS Project for Power BI visualization, focused on wind energy projects. Transforms thousands of tasks into 19 main milestones.
 
+## Detailed Installation Guide
+
+### 1. Python Installation
+1. Download Python:
+   - Visit [Python.org](https://www.python.org/downloads/)
+   - Download Python 3.x (latest stable version)
+   - **Important**: Check "Add Python to PATH" during installation
+
+2. Verify Installation:
+   - Open Command Prompt (cmd)
+   - Type: `python --version`
+   - Should display Python version
+
+### 2. Required Extensions and Packages
+
+#### Install pip (if not installed):
+```bash
+python -m ensurepip --default-pip
+```
+
+#### Install required packages:
+```bash
+pip install pyodbc
+pip install pandas
+pip install sqlalchemy
+```
+
+#### Verify installations:
+```bash
+pip list
+```
+
+### 3. Microsoft Access Driver
+1. Verify ODBC Driver:
+   - Open Windows Search
+   - Type "ODBC Data Sources"
+   - Check if "Microsoft Access Driver (*.mdb, *.accdb)" is listed
+2. If driver is missing:
+   - Download "Microsoft Access Database Engine"
+   - Install the version matching your Office installation (32 or 64-bit)
+
 ## How to Use
 
 ### Requirements
@@ -50,5 +91,16 @@ The program categorizes tasks into:
 17. Run Test
 18. COD
 
-## Support
-For questions or issues, please open an issue on GitHub.
+## Troubleshooting
+
+### Common Issues and Solutions
+
+1. Python Path Error:
+   - Verify Python is in System PATH
+   - Restart command prompt after installation
+
+2. Package Installation Errors:
+   ```bash
+   # If pip install fails, try:
+   python -m pip install --upgrade pip
+   python -m pip install
