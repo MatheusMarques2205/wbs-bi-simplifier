@@ -3,7 +3,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 # Database configuration
-DATABASE_PATH = r"C:\Users\matheus.sales\OneDrive - Goldwind International\CS50 Harvard\Python Projects\WBS Database\EDF_Jacobina_Finame_WTG_Phase A_B.mdb"  # Replace with your database path
+DATABASE_PATH = r"C:\Users\matheus.sales\OneDrive - Goldwind International\CS50 Harvard\wbs-bi-simplifier\wbs_database\project_database.mdb"  # Replace with your database path
 DRIVER = "Microsoft Access Driver (*.mdb, *.accdb)"
 CONN_STR = f"DRIVER={{{DRIVER}}};DBQ={DATABASE_PATH};"
 
