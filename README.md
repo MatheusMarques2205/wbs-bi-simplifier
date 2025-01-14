@@ -1,44 +1,54 @@
 # WBS BI Simplifier
 
-## Sobre
-Ferramenta para simplificar dados de WBS do MS Project para visualização em Power BI, focada em projetos de energia eólica. Transforma milhares de tarefas em 19 marcos principais.
+## About
+Tool to simplify WBS data from MS Project for Power BI visualization, focused on wind energy projects. Transforms thousands of tasks into 19 main milestones.
 
-## Como Usar
+## How to Use
 
-### Requisitos
+### Requirements
 - Python 3.x
 - Microsoft Access
 - Power BI Desktop
-- Pacotes Python: pyodbc, pandas, sqlalchemy
+- Python packages: pyodbc, pandas, sqlalchemy
 
-### Passo a Passo
+### Step by Step
 
-1. Configure o arquivo Python:
-   - Abra "WBS (Work Breakdown Structure).py"
-   - Atualize o caminho do banco de dados:
+1. Configure Python file:
+   - Open "WBS (Work Breakdown Structure).py"
+   - Update database path:
    ```python
-   DATABASE_PATH = "seu_caminho_do_banco.mdb"
+   DATABASE_PATH = "your_database_path.mdb"
    ```
 
-2. Execute o programa:
-   - Abra o terminal
-   - Execute: `python "WBS (Work Breakdown Structure).py"`
+2. Run the program:
+   - Open terminal
+   - Run: `python "WBS (Work Breakdown Structure).py"`
 
-3. No Power BI:
-   - Importe as duas tabelas usando Power Query
-   - Crie relacionamento entre as tabelas usando TASK_ID
-   - Crie suas visualizações
+3. In Power BI:
+   - Import both tables using Power Query
+   - Create relationship between tables using TASK_ID
+   - Create your visualizations
 
-## Marcos Principais
-O programa categoriza as tarefas em:
-- NTP
-- Anchor Cages (Ex Works, POD, Site)
-- WTG Components
-- Foundation
-- Crane Operations
-- Installation
-- Commissioning
-- COD
+## Main Milestones
+The program categorizes tasks into:
+1. NTP
+2. Anchor Cages EX Works
+3. Anchor Cages Delivery at POD
+4. Anchor Cages Delivery at Site
+5. WTG Ex Works Local
+6. Foundation Ready
+7. WTG Delivery at Site
+8. Main Crane Mobilization
+9. Pre Erection
+10. Full Erection
+11. Main Crane Demobilization
+12. Electrical and Mechanical Completion
+13. SCADA Installation
+14. Pre Commissioning
+15. Substation Energized
+16. Commissioning
+17. Run Test
+18. COD
 
-## Suporte
-Para dúvidas ou problemas, abra uma issue no GitHub.
+## Support
+For questions or issues, please open an issue on GitHub.
