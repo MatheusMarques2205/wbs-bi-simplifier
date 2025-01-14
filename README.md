@@ -1,7 +1,19 @@
 # WBS BI Simplifier
 
+## ⚠️ Important Note
+This tool is **Windows-only** as it requires Microsoft Access and its ODBC drivers. It will not work on Mac OS or Linux systems.
+
 ## About
 Tool to simplify WBS data from MS Project for Power BI visualization, focused on wind energy projects. Transforms thousands of tasks into 19 main milestones.
+
+## System Requirements
+- **Operating System**: Windows 10 or later (mandatory)
+- **Database**: Microsoft Access 2010 or later
+- **Python**: Version 3.6 or later
+- **Power BI**: Desktop version (latest recommended)
+- **RAM**: Minimum 4GB
+- **Storage**: 500MB free disk space
+- **Microsoft Office**: 32 or 64-bit version (for Access Database Engine)
 
 ## Detailed Installation Guide
 
@@ -35,7 +47,7 @@ pip install sqlalchemy
 pip list
 ```
 
-### 3. Microsoft Access Driver
+### 3. Microsoft Access Driver (Windows Only)
 1. Verify ODBC Driver:
    - Open Windows Search
    - Type "ODBC Data Sources"
@@ -43,14 +55,9 @@ pip list
 2. If driver is missing:
    - Download "Microsoft Access Database Engine"
    - Install the version matching your Office installation (32 or 64-bit)
+   - Download link: [Microsoft Access Database Engine](https://www.microsoft.com/en-us/download/details.aspx?id=54920)
 
 ## How to Use
-
-### Requirements
-- Python 3.x
-- Microsoft Access
-- Power BI Desktop
-- Python packages: pyodbc, pandas, sqlalchemy
 
 ### Step by Step
 
@@ -103,4 +110,27 @@ The program categorizes tasks into:
    ```bash
    # If pip install fails, try:
    python -m pip install --upgrade pip
-   python -m pip install
+   python -m pip install package_name
+   ```
+
+3. ODBC Driver Issues:
+   - Ensure correct driver version (32/64-bit)
+   - Reinstall Microsoft Access Database Engine if needed
+   - Make sure you're using Windows OS
+
+4. Database Connection Error:
+   - Check database path
+   - Verify file permissions
+   - Ensure database is not locked by another program
+
+## Support
+For questions or issues:
+1. Check troubleshooting guide above
+2. Open an issue on GitHub
+3. Include error messages and system details in reports
+
+## Platform Compatibility
+- ✅ Windows 10
+- ✅ Windows 11
+- ❌ MacOS (Not Compatible)
+- ❌ Linux (Not Compatible)
