@@ -37,9 +37,7 @@ python -m ensurepip --default-pip
 
 #### Install required packages:
 ```bash
-pip install pyodbc
-pip install pandas
-pip install sqlalchemy
+pip install -r requirements.txt
 ```
 
 #### Verify installations:
